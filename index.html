@@ -41,7 +41,7 @@ ul{padding-left:18px;color:var(--mute)}li{margin:6px 0}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:40px 24px 60px}
 .rv{opacity:1;transform:none;transition:all .9s cubic-bezier(.2,.8,.2,1)}.rv.on{opacity:1;transform:none}
 </style></head><body>
-<nav><div><b>Md Ayan</b><span><a href="#demo">Live demo</a><a href="#offer">Pricing</a><a href="#proof">Background</a><a class="cta" href="#contact">Book a call</a></span></div></nav>
+<nav><div><b>Md Ayan</b><span><a href="#demo">Live demo</a><a href="#offer">Services</a><a href="#proof">Background</a><a class="cta" href="#contact">Book a call</a></span></div></nav>
 <section class="hero"><h1>A better front desk.<br><span>Built for your website.</span></h1>
 <p class="sub">I build AI assistants that answer your customers and book appointments for you, 24/7, plus fast modern websites. Small, fixed-scope builds.</p>
 <a class="btn" href="#contact">Book a 15-minute call</a><a class="btn g" href="#demo">Try the live demo</a></section>
@@ -51,9 +51,9 @@ footer{text-align:center;color:var(--mute);font-size:13px;padding:40px 24px 60px
 <div class="card"><div class="num">03</div><h3>Hands off to you</h3><p>Anything unusual or sensitive goes straight to you or your staff with the full conversation attached.</p></div></div></section>
 <section id="demo"><div class="demo"><div class="rv"><span class="tag">INTERACTIVE PROTOTYPE - SCRIPTED, FICTIONAL DATA</span><h2>Talk to it.</h2><p class="lead">This browser-only prototype illustrates a booking conversation for a fictional clinic. It uses scripted replies, not a language model. No appointments, emails or reminders are sent. A production build would need your real data and integrations.</p></div>
 <div class="phone rv"><div class="ph">Sample Physio Clinic</div><div id="m"></div><div class="chips"><button>Book an appointment</button><button>Prices?</button><button>Opening hours</button></div><form id="f"><input id="i" placeholder="Message" autocomplete="off"><button>Send</button></form></div></div></section>
-<section id="offer"><div class="rv"><h2>Example project budgets.</h2><p class="lead">Setup from $500 USD. Final scope, hosting and any recurring model or software fees agreed before work starts.</p></div>
-<div class="grid rv"><div class="card"><h3>AI Assistant</h3><div class="price">$500 <small>one-time</small></div><ul><li>Chat assistant on your existing website</li><li>Answers from your own services and prices</li><li>Appointment requests sent to your email</li><li>Handover to you for anything it should not decide</li><li>Setup in about a week, one round of changes</li></ul></div>
-<div class="card"><span class="tag">EXAMPLE SCOPE</span><h3>Assistant + New Website</h3><div class="price">$800-1,000 <small>one-time</small></div><ul><li>Everything in AI Assistant</li><li>Clean, fast, mobile-first website</li><li>Booking and contact built in</li><li>Basic search setup (Google Business and page titles)</li><li>Price depends on number of pages</li></ul></div></div></section>
+<section id="offer"><div class="rv"><h2>Practical projects.</h2><p class="lead">AI websites, design, AI agents and consultation. Start with a conversation about what your business needs.</p></div>
+<div class="grid rv"><div class="card"><h3>AI Assistant</h3><ul><li>Chat assistant on your existing website</li><li>Answers from your own services and prices</li><li>Appointment requests sent to your email</li><li>Handover to you for anything it should not decide</li><li>Setup in about a week, one round of changes</li></ul></div>
+<div class="card"><span class="tag">EXAMPLE SCOPE</span><h3>Assistant + New Website</h3><ul><li>Everything in AI Assistant</li><li>Clean, fast, mobile-first website</li><li>Booking and contact built in</li><li>Basic search setup (Google Business and page titles)</li><li>Scope agreed before work starts</li></ul></div></div></section>
 <section class="dark" id="proof"><div class="in" style="padding:64px 24px"><h2>Built by Md Ayan.</h2><p class="lead">I build software and AI-agent projects. Explore my public work on <a style="color:#2997ff" href="https://github.com/mdayan8">GitHub</a>, then let's discuss one practical improvement to your website.</p></div></section><section id="contact" style="text-align:center"><div class="rv"><h2>Let's talk for 15 minutes.</h2><p class="lead" style="margin:0 auto 30px">I will look at your current setup and tell you honestly whether an assistant would help. No pitch deck.</p>
 <a class="btn" href="mailto:ayanmd896@gmail.com?subject=15-minute%20call">ayanmd896@gmail.com</a></div></section>
 <footer>Md Ayan - <a href="https://github.com/mdayan8" style="color:inherit">GitHub</a> - <a href="https://linkedin.com/in/mdayan8" style="color:inherit">LinkedIn</a><br>The demo clinic is fictional. Results vary by business.</footer>
@@ -66,7 +66,7 @@ if(st.step=='time'){const s=l.match(/\d{1,2}[:.]\d{2}/);const v=s&&s[0].replace(
 if(st.step=='name'){const n=t.trim();st={};return 'Thanks, '+n+'. That completes the sample flow. This is a simulation: no booking, email or reminder was created. Anything else?'}
 for(const k in days)if(l.includes(days[k].toLowerCase())){st={step:'time',day:k};return days[k]+' is free at '+slots[k].join(', ')+'. Which time?'}
 if(/book|appoint|slot|see/.test(l))return 'Happy to. Which day works: Monday to Friday?';
-if(/price|cost|fee/.test(l))return 'Initial assessment is $90, follow-ups $70 (sample prices).';
+if(/price|cost|fee/.test(l))return 'This demo does not provide quotes. Please contact the team to discuss the service you need.';
 if(/hour|open|close/.test(l))return 'Open Monday to Friday, 9:00 to 17:00.';
 if(/where|address|park|locat/.test(l))return '12 Example Street, free parking behind the building (sample).';
 return 'I can book appointments and answer questions on prices, hours and location. For anything medical, please call the clinic.'}
